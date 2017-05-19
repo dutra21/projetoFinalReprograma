@@ -1,0 +1,325 @@
+/*GERAIS*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@keyframes fadeUp{
+	0%{
+		transform: translateX(20px) translateY(50px);
+		opacity: 0;
+	}
+	100%{
+		transform: translateX(20px) translateY(0px);
+		opacity: 1;
+	}
+}
+
+body { 
+	padding-top: 70px;
+	font-family: 'Roboto', sans-serif;
+}
+*{
+	box-sizing: border-box;
+}
+section {
+	padding: 30px 0;
+}
+h2 {
+	padding-left: 5px;
+	margin-bottom: 20px;
+}
+p {
+	margin: 10px 0;
+	font-size: 1.1em;
+	color: #000000;
+}
+a, input, button {
+	cursor: pointer;
+}
+a {
+	color: #11CC4C;
+}
+a:focus,
+a:hover {
+	color: #43F68C;
+}
+label {
+	font-weight: 400;
+}
+footer {
+	background: #814086;
+	padding: 15px 0;
+}
+footer a {
+	color: #11CC4C;
+	text-decoration: none;
+}
+footer a:hover {
+	color: #ffffff;
+}
+.centralizador {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*MENU NAVEGAÇÃO*/
+.navbar-default {	
+	background: #191717;
+	border: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #11CC4C;
+	font-weight: bold;
+	text-shadow: none;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	color: #FFFFFF;
+}
+
+/*BANNER*/
+#banner {
+	width: 100vw;
+	height: 100vh;
+	padding: 0;
+}
+.slogan {
+	height: 100vh;
+}
+#bannerConteudo {
+	position: relative;
+}
+.bg_video{
+	position: absolute; 
+	top: 0; 
+	left: 0;
+	width: 100%; 
+	height: 100vh;
+	z-index: -1000;
+	background-color: black;
+	background-size: cover; 
+	object-fit: cover;
+}
+
+.slogan img {
+	height: 50%;
+	object-fit: cover;
+}
+.slogan h2 {
+	background: rgba(107, 51, 111, 0.63);
+	color: #FFFFFF;
+	font-size: 1.6em;
+	max-width: 40%;
+	padding: 15px;
+	margin-top: 0;
+}
+.botaoInscricao {
+	padding:30px;
+}
+.botaoInscricao .btn-default {
+	font-size: 1.1em;
+	color: #11CC4C;
+	background: #191717;
+	padding: 20px;
+	border: none;
+	text-shadow: none;	
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+/*EVENTO*/
+#evento {
+	background: white;
+}
+.cronograma {
+	background-color: rgba(0,0,0,.05);
+	padding: 10px;
+	margin: 10px;
+	color: #000000;
+}
+.conteudoEvento h2 {
+	background: #43F68C;
+	color: #191717;
+}
+.conteudoEvento a {
+	color: #814086;
+	font-weight: bold;
+}
+.diasCronograma {
+	background: #FFFFFF;
+	padding: 10px;
+}
+.tabelaCronograma {
+	border: solid 2px rgba(0,0,0,.2);
+	margin: 2px 0;
+	padding: 0;
+}
+.row {
+	margin: 0;
+}
+.local {
+	font-weight: bold;
+	color: #6b6d6b;
+}
+
+/*CONVIDADOS*/
+#convidados {
+	background: #d3d6d3;
+}
+.convidado {
+	border-bottom: solid 7px #B37DCE;
+	margin: 10px 0;
+	padding-bottom: 15px;
+}
+.convidado img {
+	width: 50%;
+	max-height: 350px;
+	object-fit: cover;
+	align-self: center;
+}
+.convidado h2 {
+	background: #43F68C;
+	color: #191717;
+	width: 100%;
+}
+.convidado h4 {
+	font-size: 1.5em;
+	color: #000000;
+}
+.bootcamp {
+	padding-right: 5px;
+
+}
+
+/*INSCRIÇÕES*/
+#inscricoes {
+	background-color: #191717;
+	padding: 40px 0;
+	color: white;
+}
+.form-group {
+	min-width: 40%;
+}
+.form-group input,
+.form-group select {
+	background: none;
+	border: solid 1px white;
+}
+.form-group .btn-default{
+	background: none;
+	border: solid 1px #FFFFFF;
+	text-shadow: none;
+	color: #11CC4C;
+}
+
+/*INSCRITOS*/
+#inscritos {
+	background-color: #191717;
+	padding: 40px 0;
+	color: white;
+}
+#inscritos p {
+	color: white;
+}
+.mensagem::before{
+	display: block;
+	position: absolute;
+	left: -20px;
+	top: 0px;
+	border: solid 20px transparent;
+	content: "";
+	border-top-color: #11CC4C;
+}
+.mensagem{
+	position: relative;
+	background: #11CC4C;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 12px;
+    color: #FFFFFF;
+    transform: translateX(20px);
+    width: 30%;
+    animation: fadeUp 1s ease;
+}
+.mensagem h3{
+	margin: 0;
+}
+.mensagens{
+	padding-bottom: 20px;
+}
+.inscricaoConcluida {
+	font-style: italic;
+}
+
+/*LOCAL*/
+.infoMega iframe {
+	width: 100%; 
+	height: 60%;
+	margin-top: 15px;
+}
+.fotosMega img {
+	width: 100%;
+	height: 100%;
+	margin: 30px 0;
+	filter: grayscale(100%);
+}
+.fotosMega img:hover {
+	filter: none;
+}
+.infoMega h2 {
+	background: #43F68C;
+	color: #191717;
+}
+.infoMega a {
+	color: #814086;
+	font-weight: bold;
+}
+
+/*QUEM SOMOS*/
+#ladies {
+	padding: 50px 0;
+}
+#ladies h2 {
+	background: #43F68C;
+	color: #191717;
+	margin-bottom: 20px;
+}
+.item img{
+	width: 100vw;
+	height: 100vh;
+}
+
+/*RODAPÉ*/
+.rodape {
+	color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+.rodape p {
+	font-size: 1.1em;
+}
+.fa {
+	font-size: 1.7em;
+	margin: 0 5px;
+}
+
+/*RESPONSIVO SMARTPHONE*/
+@media (max-width: 700px) {
+	.slogan h2 {
+		max-width: 61%;
+	}
+	.botaoInscricao .btn-default {
+		margin-top: 0;
+	}
+	.form-group {
+	width: 100%;
+	}
+	.mensagem {
+		min-width: 60%;
+	}
+	#rodape p {
+		font-size: 1.0em;
+	}
+}
